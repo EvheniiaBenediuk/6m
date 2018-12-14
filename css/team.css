@@ -1,0 +1,168 @@
+.text {
+    padding-top: 100px;
+}
+.description{
+    text-align: center;
+    padding-bottom: 90px;
+    padding-top: 40px;
+    font-family: var(--robotoFont);
+}
+/* .list_team{
+    width: 375px;
+    height: 418px;
+} */
+.list_icons{
+    display: flex;
+    padding: 15px 20px;
+    display: block;
+    position: relative;
+}
+.list_icons a{
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.description_img{
+    display: flex;
+    justify-content: space-between;
+}
+.blue_square{
+    width: 375px;
+    height: 418px;
+    background: #95e1d3;
+    position: absolute;
+    z-index: -1;
+}
+.team_img{
+        max-width: 100%;
+        height: auto;
+}
+.item_icons {
+    display: flex;
+    width: 204px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -650%;
+    left: 15%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 15px 20px;
+    display: none;
+}
+.team_img:hover .item_icons{
+    display: block;
+    /* transition: 1s; */
+    cursor: pointer;
+    z-index: 9999;
+}
+.facebook:hover{
+    background-color: #95e1d3;
+    transition: 1s;
+    cursor: pointer;
+}
+.twitter:hover{
+    background-color: #95e1d3;
+    transition: 1s;
+    cursor: pointer;
+}
+.pinterest:hover{
+    background-color: #95e1d3;
+    transition: 1s;
+    cursor: pointer;
+}
+.instagram:hover{
+    background-color: #95e1d3;
+    transition: 1s;
+    cursor: pointer;
+}
+.icon{
+    padding: 20px 25px;
+    background: #fce38a;
+    margin-right: 1px;
+}
+.facebook{
+    background-image: url("/img/share_1.png");
+}
+.twitter{
+    background-image: url("/img/share_2.png");
+}
+.pinterest{
+    background-image: url("/img/share_3.png");
+}
+.instagram{
+    background-image: url("/img/share_4.png");
+}
+.name {
+    font-family: var(--mainFont);
+    font-weight: 100;
+    font-size: 14px;
+}
+.position{
+    font-family: var(--robotoFont);
+    font-size: 15px;
+    color: var(--colorText);
+}
+.team_section::after{
+    content:"";
+    border-top: 1px solid var(--colorText);
+    width: 1200px;
+    display: block;
+    margin: 80px auto 0px;
+    padding-bottom: 25px;
+}
+/* .list_icons{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-50%) translateY(-50%);
+} */
+.share_1:hover{
+    background: #95e1d3;
+    transition: 1s;
+    cursor: pointer;
+}
+.share_2:hover{
+    background: #95e1d3;
+    transition: 1s;
+    cursor: pointer;
+}
+.share_3:hover{
+    background: #95e1d3;
+    transition: 1s;
+    cursor: pointer;
+}
+.share_4:hover{
+    background: #95e1d3;
+    transition: 1s;
+    cursor: pointer;
+}
+.share_1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 15px 20px;
+    background: #fce38a;
+}
+.share_2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 15px 20px;
+    background: #fce38a;
+}
+.share_3{
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 15px 20px;
+    background: #fce38a;
+}
+.share_4{
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 15px 20px;
+    background: #fce38a;
+}
