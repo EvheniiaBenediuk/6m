@@ -1,97 +1,160 @@
+.team_section{
+    position: relative;
+}
 .text {
-    padding-top: 100px;
+    padding-top: 0px;
 }
 .description{
     text-align: center;
-    padding-bottom: 90px;
+    padding-bottom: 165px;
     padding-top: 40px;
     font-family: var(--robotoFont);
 }
-/* .list_team{
+.team_container {
+    display: flex;
+    justify-content:space-around;
+}
+.team_card {
+    background: #95e1d3;
+    z-index: -1;
     width: 375px;
-    height: 418px;
-} */
+    height: 492px;
+    position: absolute;    
+    top: 110%;
+    left: 15%;
+    transform: translateX(-48%) translateY(-49%);
+    transition: 200ms linear;
+    
+}
+
+.team_card:hover .team_img{
+    top: -5%;
+    left: -5%;
+    transform: translateX(0%) translateY(-5%);
+}
+.team_card:hover .gradient{
+    width: 375px;
+    height: 492px;
+    position: absolute;
+    z-index: 7;
+    top: -5%;
+    left: -5%;
+    transform: translateX(0%) translateY(-5%);
+    cursor: pointer;
+    transition: 200ms linear;
+
+    background: rgba(216,137,136,1);
+background: -moz-linear-gradient(top, rgba(216,137,136,1) 0%, rgba(224,206,133,0.81) 54%, rgba(224,206,133,0.65) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(216,137,136,1)), color-stop(54%, rgba(224,206,133,0.81)), color-stop(100%, rgba(224,206,133,0.65)));
+background: -webkit-linear-gradient(top, rgba(216,137,136,1) 0%, rgba(224,206,133,0.81) 54%, rgba(224,206,133,0.65) 100%);
+background: -o-linear-gradient(top, rgba(216,137,136,1) 0%, rgba(224,206,133,0.81) 54%, rgba(224,206,133,0.65) 100%);
+background: -ms-linear-gradient(top, rgba(216,137,136,1) 0%, rgba(224,206,133,0.81) 54%, rgba(224,206,133,0.65) 100%);
+background: linear-gradient(to bottom, rgba(216,137,136,1) 0%, rgba(224,206,133,0.81) 54%, rgba(136, 133, 119, 0.65) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d88988', endColorstr='#e0ce85', GradientType=0 );
+}
+.team_img{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: 200ms linear;
+    max-width: 100%;
+    height: 100%; 
+    z-index: 1;
+
+}
 .list_icons{
     display: flex;
     padding: 15px 20px;
+    position: absolute;
+    top: 55%;
+    left:95%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 9999;
+    display: none;
+    transition: 200ms linear;
+}
+.team_card:hover .list_icons{
     display: block;
-    position: relative;
 }
 .list_icons a{
     background-repeat:no-repeat;
     background-position: center;
-}
-.description_img{
-    display: flex;
-    justify-content: space-between;
-}
-.blue_square{
-    width: 375px;
-    height: 418px;
-    background: #95e1d3;
-    position: absolute;
-    z-index: -1;
-}
-.team_img{
-        max-width: 100%;
-        height: auto;
 }
 .item_icons {
     display: flex;
     width: 204px;
     flex-wrap: wrap;
     position: absolute;
-    top: -650%;
-    left: 15%;
+    top: -50%;
+    left: -190%;
     transform: translateX(-50%) translateY(-50%);
     padding: 15px 20px;
-    display: none;
-}
-.team_img:hover .item_icons{
-    display: block;
-    /* transition: 1s; */
-    cursor: pointer;
-    z-index: 9999;
-}
-.facebook:hover{
-    background-color: #95e1d3;
-    transition: 1s;
-    cursor: pointer;
-}
-.twitter:hover{
-    background-color: #95e1d3;
-    transition: 1s;
-    cursor: pointer;
-}
-.pinterest:hover{
-    background-color: #95e1d3;
-    transition: 1s;
-    cursor: pointer;
-}
-.instagram:hover{
-    background-color: #95e1d3;
-    transition: 1s;
+    transition: 200ms linear;
     cursor: pointer;
 }
 .icon{
     padding: 20px 25px;
     background: #fce38a;
     margin-right: 1px;
+    transition: 200ms linear;
+    cursor: pointer;
 }
 .facebook{
-    background-image: url("/img/share_1.png");
+    background-image: url(/img/facebook.png);
+    top: 50%;
+    left: 70%;
+    transform: translateX(-154%) translateY(-50%)
+    
 }
-.twitter{
-    background-image: url("/img/share_2.png");
+.twitter {
+    background-image: url(/img/twitter.png);
+    top: 709%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%)
 }
-.pinterest{
-    background-image: url("/img/share_3.png");
+.pinterest {
+    background-image: url(/img/pinterest.png);
+    top: 50%;
+    left: 50%;
+    transform: translateX(53%) translateY(-50%)
+    
 }
-.instagram{
-    background-image: url("/img/share_4.png");
+.instagram {
+    background-image: url(/img/instagram.png);
+    top: 50%;
+    left: 50%;
+    transform: translateX(155%) translateY(-50%)
+}
+
+.facebook:hover {
+    background-color: #95e1d3;
+    display: block;
+}
+.twitter:hover {
+    background-color: #95e1d3;
+    display: block;
+}
+.pinterest:hover{
+    background-color: #95e1d3;
+    display: block;
+}
+.instagram:hover {
+    background-color: #95e1d3;
+    display: block;
+}
+
+/* .description_img{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 210%;
+    left: 15%;
+    transform: translateX(-48%) translateY(-49%);
 }
 .name {
-    font-family: var(--mainFont);
+    padding: 15px 0px 5px;
+    text-transform: uppercase;
+    font-family: var(--robotoFont);
     font-weight: 100;
     font-size: 14px;
 }
@@ -99,70 +162,14 @@
     font-family: var(--robotoFont);
     font-size: 15px;
     color: var(--colorText);
-}
+} */
 .team_section::after{
     content:"";
     border-top: 1px solid var(--colorText);
     width: 1200px;
     display: block;
-    margin: 80px auto 0px;
-    padding-bottom: 25px;
-}
-/* .list_icons{
     position: absolute;
-    top: 50%;
-    left: 25%;
+    top: 190%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
-} */
-.share_1:hover{
-    background: #95e1d3;
-    transition: 1s;
-    cursor: pointer;
-}
-.share_2:hover{
-    background: #95e1d3;
-    transition: 1s;
-    cursor: pointer;
-}
-.share_3:hover{
-    background: #95e1d3;
-    transition: 1s;
-    cursor: pointer;
-}
-.share_4:hover{
-    background: #95e1d3;
-    transition: 1s;
-    cursor: pointer;
-}
-.share_1 {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translateX(-50%) translateY(-50%);
-    padding: 15px 20px;
-    background: #fce38a;
-}
-.share_2 {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translateX(-50%) translateY(-50%);
-    padding: 15px 20px;
-    background: #fce38a;
-}
-.share_3{
-    position: absolute;
-    top: 50%;
-    left: 56%;
-    transform: translateX(-50%) translateY(-50%);
-    padding: 15px 20px;
-    background: #fce38a;
-}
-.share_4{
-    position: absolute;
-    top: 50%;
-    left: 72%;
-    transform: translateX(-50%) translateY(-50%);
-    padding: 15px 20px;
-    background: #fce38a;
 }

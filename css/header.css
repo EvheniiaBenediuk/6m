@@ -28,7 +28,7 @@ html{
     --colorText: #b3b3b3;
     --mainFont: 'Montserrat', sans-serif;
     --cursiveFont: 'Kaushan Script', cursive;
-    --robotoFont: 'Roboto', sans-serif;
+    --robotoFont: 'Roboto', sans-serif; 
     --titleFontSize: 30px;
 }
 .wrapper {
@@ -55,6 +55,7 @@ html{
     font-size: 14px;
     color: var(--mainColor);
     font-family: var(--mainFont);
+    transition: 200ms linear;
 }
 .item_link:hover{
 color: #f38181;
